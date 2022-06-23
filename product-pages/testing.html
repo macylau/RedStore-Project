@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | RedStore</title>
+    <link rel="stylesheet" href="testing.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="store.js" async></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a class="cart" href="cart.html"><img src="images/cart.png" width="30px" height="30px"><span>0</span></a>
+               <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+           </div>
+    </div>
+
+<!------ single product details ------>
+    <div class="bottom">
+        <div class="white_bottom">
+            <div class="left_side">
+                <input class="mouseP" type="text" />
+                <div class="top_sq"></div>
+                <div class="bottom_sq"></div>
+                <div class="shoe">
+                  <div class="left_btn">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                  </div>    
+                    <div class="shoe_img">
+                        <img class="imgR" src="images/MenGreyHoodedBomberJacket.PNG" />
+                        <img class="imgW" src="images/MenGreyHoodedBomberJacket1.PNG" />
+                    </div>
+                  <div class="right_btn">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="switch">
+                    <div class="switch1 th_shoe"></div>
+                    <div class="switch2"></div>
+                </div>
+                <div class="icon">
+                    <div class="back">
+                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                    </div>
+                    <div class="cart" id="CartIcon">
+                        <i class="fa fa-shopping-cart"></i>
+                        <div class="RTnumber"></div>
+                    </div>    
+                </div>
+            </div>
+            <div class="right_side">
+                <div class="info">
+                    <div class="sname">&nbsp;Skate Shoes
+                        <div class="name">Roshe&nbsp;<b>Walk</b></div>
+                    </div>
+                    <div class="price">USD $89</div>
+                </div>
+                <div class="deco">      </div>
+                <div class="detail">
+                    <div class="qua">
+                        <div class="text">
+                            <div class="word">Quantity:&nbsp;</div>
+                            <div class="count">1</div>
+                        </div>
+                        <div class="counter">
+                            <div class="sub">-</div>
+                            <div class="num">1</div>
+                            <div class="add">+</div>
+                        </div>
+                    </div>
+                    <div class="size">
+                        <div class="text">
+                            <div class="this_size">Size:&nbsp;</div>
+                            <div class="size_num"></div>
+                        </div>
+                        <ul>
+                            <li>S</li>
+                            <li>M</li>
+                            <li>L</li>
+                            <li>XL</li>
+                            <li>XXL</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="btn add-cart" type="button" id="addToCart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="cart_bottom">
+            <div class="cart_list">
+                <div class="close_btn">
+                    <i class="fa fa-times"></i>
+                </div>
+                <div class="title">
+                    <div class="cart_icon">
+                    <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <h2>Your Cart</h2>
+                </div>
+                <div class="cart_cat">
+                    <div class="desT">Description</div>
+                    <div class="sizeT">Size</div>
+                    <div class="QTYT">QTY</div>
+                    <div class="priceT">Price</div>
+                </div>
+                <ul></ul>
+            </div>
+            <div class="total">
+                <div class="totalT">Total:</div>
+                <div class="totalP">USD $89</div>
+            </div>
+            <div class="checkout">
+                <button class="cancel">Cancel</button>
+                <button>Checkout</button>
+            </div>
+        </div>
+    </div>
+    <div class="roomRec">
+        <div class="recbottom"></div><img src="" />
+    </div>
+
+
+<!--------- title --------->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+<!------- products -------->
+    <div class="small-container">
+      
+        <div class="row">
+            <div class="col-4">
+                <img src="images/Tshirt-2.PNG">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Tshirt-3.PNG">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Tshirt-4.png">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Tshirt-5.PNG">
+                <h4>Red Printed T-shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+        </div>
+    </div>
+<!-------- footer ------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and 
+                        Benefits of sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - RedStore Online Store</p>
+        </div>
+    </div>
+<!------- js for toggle menu ------>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }    
+    </script>
+<!------- js for product gallery ------>
+    <script>
+        var ProductImgduct = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function(){
+            ProductImgduct.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function(){
+            ProductImgduct.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function(){
+            ProductImgduct.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function(){
+            ProductImgduct.src = SmallImg[3].src;
+        }
+
+    </script>
+</body>
+</html>
